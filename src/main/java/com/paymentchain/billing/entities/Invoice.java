@@ -12,7 +12,6 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 
-
 /**
  *
  * @author manuqs
