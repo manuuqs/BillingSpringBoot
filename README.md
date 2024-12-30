@@ -111,5 +111,16 @@ Para ejecutar el JAR:
 java -jar target/billing-0.0.1-SNAPSHOT.jar
 ```
 
+## DOCKERIZACIÓN
+
+Para crear una imagen dockerfile
+```bash
+docker build -t billing_image --no-cache --build-arg JAR_FILE=target/billing-0.0.1-SNAPSHOT.jar .
+```
+
+Para ejecutar un contenedor a partir de la imagen
+```bash
+docker run -p 7081:7080 --name billing_container billing_image:latest
+```
 ##
 
